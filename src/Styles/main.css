@@ -1,0 +1,137 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+:root{
+    --mainColor:#29335C;
+    --mainColorLight:#4658a0;
+    --secondaryColor:#DB2B39;
+    --textColor:white;
+}
+
+header {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    height: 80px;
+    padding:0 2rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
+
+.NavButton{
+    margin: 0 2rem;
+    color: var(--textColor);
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 20px;
+    border: 0px;
+}
+
+.NavButton:hover{
+    color: var(--secondaryColor);
+    cursor: pointer;
+}
+
+header .nav-btn {
+    padding:5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline:none;
+    color:var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media only screen and (max-width:1024px){
+    header .nav-btn{
+        visibility: visible;
+        opacity: 1;
+
+    }
+
+    header nav{
+        position:fixed;
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        gap:1.5rem;
+        background-color: var(--mainColor);
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+
+    header .responsive_nav{
+        transform:none;
+    }
+
+    
+}
+
+
+body{
+    font-family: "Titillium Web", sans-serif;
+    transition: background-color 0.3 ease;
+}
+
+.dark-mode{
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode-toggle{
+    position: fixed;
+    top:10px;
+    right:10px;
+}
+
+.dark-mode-toggle label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.dark-mode-toggle input{
+    margin-right: 8px;
+}
+
+.CookiesPolicyTitle{
+    text-align: center;
+    margin-top: 2%;
+    text-decoration: underline;
+}
+
+.CookiesPolicyParagraph{
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 120px;
+}
+
+.AcceptCookiesButton{
+    background-color: #29335C;
+    color: white;
+    width:50px;
+    border-radius: 50%;
+}
+
+.AcceptCookiesButton:hover{
+    background-color: gray;
+    color: #ffffff;
+    cursor: pointer;
+}
