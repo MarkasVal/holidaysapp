@@ -1,11 +1,10 @@
 import React from 'react';
 import {FaBars,FaTimes} from "react-icons/fa";
 import {useRef} from "react";
-import DarkModeToggle from '../Components/darkmode';
 import "../Styles/main.css"
 import { useNavigate } from "react-router-dom";
 
-function Navbar() {
+function Navbar2() {
     const navRef = useRef();
 
     const navigate = useNavigate();
@@ -22,7 +21,6 @@ function Navbar() {
             <button onClick={() => {navigate('/Holidays')}} className='NavButton'>Holidays</button>
             <button onClick={() => {navigate('/Book')}} className='NavButton'>Book</button>
             <button onClick={() => {navigate('/Aboutus')}} className='NavButton'>About Us</button>
-            <button className='NavButton'><DarkModeToggle/></button>
             <button className='nav-btn nav-close-btn' onClick={showNavbar}>
                 <FaTimes/>
             </button>
@@ -35,4 +33,5 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar2;
+

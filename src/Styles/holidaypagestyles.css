@@ -1,0 +1,29 @@
+.HolidayDestinationList{
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 150px;
+    
+}
+
+.HolidaySearchButton{
+    width: 80px;
+    background-color:var(--mainColor);
+    color: white;
+    height: 35px;
+    border-radius: 10%;
+}
+
+.HolidaySearchButton:hover{
+    opacity: 0.6;
+}
+
+
+.HolidaySearchBox{
+    width: 200px;
+    height: 35px;
+}

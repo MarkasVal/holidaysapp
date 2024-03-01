@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../Components/navbar';
+import Navbar2 from '../Components/navbar2';
 import Footer from '../Components/footer';
 
 
@@ -7,7 +7,7 @@ function ErrorPage() {
   return (
     
     <div>
-        <Navbar/>
+        <Navbar2/>
         <div>
             Error , this page does not exist
         </div>
